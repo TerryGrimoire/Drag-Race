@@ -11,7 +11,7 @@ function Search({season, setSeason, setCardSelection}) {
       <input type="text" onChange={(event) => setCardSelection(event.target.value)} />
       <p>filter per season</p>
             <select onChange={(e)=> setSeason(e.target.value)}>
-              { seasonNumber.map(number =>  <option value={number}>{number}</option> ) } 
+              { seasonNumber.map((number, index) =>  <option value={number} key={index}>{number}</option> ) } 
             </select>
 
       </section>

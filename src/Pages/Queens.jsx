@@ -29,7 +29,7 @@ useEffect(() =>{
 
         {seasonQueens
         .filter(el => el.name.includes(cardSelection))
-        .map((queen)=> <Cards queen={queen} /> ) }
+        .map((queen)=> <Cards queen={queen} key={queen.id} /> ) }
 
       </div>
       </div>

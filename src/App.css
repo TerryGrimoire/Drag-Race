@@ -30,7 +30,7 @@ Link {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -72,3 +72,12 @@ Link {
   background-color: blueviolet;
 }
 
+.welcome_title{
+  padding: 2rem;
+}
+
+.welcome_rupaul_img{
+  padding: 2rem;
+  border-radius: 5rem;
+  
+}
