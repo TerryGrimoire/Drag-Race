@@ -1,5 +1,5 @@
 import React from 'react';
-import RuPaul from '../images/rupaul.jpg'
+import RuPaul from '../images/Rupaul2.jpg'
 
 function Welcome() {
   return (
