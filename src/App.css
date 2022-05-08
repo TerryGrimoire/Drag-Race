@@ -41,9 +41,9 @@ Link {
 }
 
 .cards-title{
-  border-radius: 3rem;
-  color: yellow ;
-
+  border-radius: 0.5rem;
+  color: Pink ;
+  width: 90%;
 }
 
 .cards-total{
@@ -53,23 +53,27 @@ Link {
 }
 
 .cards{
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem;
-  background-color: blueviolet;
+  background-color: white;
   width: 300px;
   display: flex;
   flex-direction: column;
-  border-radius: 3rem;
+  align-items: center;
+  border-radius: 1.5rem;
 }
 
+
 .cards-image {
- height: 400px;
- width: auto;
- border-radius: 3rem;
+ height: 350px;
+ width: 90%;
+ border-radius: 1.5rem;
+ margin: 1rem;
 }
 
 .cards-description-container, .cards-description-container * {
-  background-color: blueviolet;
+  background-color: white;
+  color: black;
 }
 
 .welcome_title{
@@ -80,5 +84,27 @@ Link {
   padding: 2rem;
   border-radius: 5rem;
   height: 550px;
-  
 }
+
+.search_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_main *{
+  padding: 0.5rem 1.5rem;
+  width: 15%;
+  border-radius: 1.5rem;
+  transition: 1s ease-in-out;
+  margin: 1rem;
+}
+
+.search_input:focus{
+  width: 40%;
+  margin-bottom: 0.5rem;
+}
+
+
+

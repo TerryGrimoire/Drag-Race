@@ -7,11 +7,10 @@ function Search({season, setSeason, setCardSelection}) {
     <div >
 
       <section className='search_main'>
-      <label htmlFor="search"> Search for your queen </label>
-      <input type="text" onChange={(event) => setCardSelection(event.target.value)} />
-      <p>filter per season</p>
-            <select onChange={(e)=> setSeason(e.target.value)}>
-              { seasonNumber.map((number, index) =>  <option value={number} key={index}>{number}</option> ) } 
+      <label htmlFor="search"></label>
+      <input className='search_input' type="text" onChange={(event) => setCardSelection(event.target.value)} placeholder="Search here" />
+            <select className='search_select' onChange={(e)=> setSeason(e.target.value)}>
+              { seasonNumber.map((number, index) =>  <option value={number.number} key={index}className='search_option' >{number.display}</option> ) } 
             </select>
 
       </section>
