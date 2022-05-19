@@ -22,7 +22,7 @@ useEffect(() =>{
 
     return (
       <div className="main">
-        <h1>Queen section</h1>
+        <h1>✨ Queen section ✨</h1>
         <Search season={season} setSeason={setSeason} cardSelection={cardSelection} setCardSelection={setCardSelection} />
       <div className='cards-total'>
 
