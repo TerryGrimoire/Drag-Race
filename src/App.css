@@ -13,9 +13,9 @@ h1, h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: inherit;
 }
 
@@ -62,8 +62,8 @@ Link {
 
 .cards-title{
   border-radius: 0.5rem;
-  color: Pink ;
-  background-color: white;
+  color: #FAFAFA ;
+  background-color: inherit;
   width: 90%;
 }
 
@@ -74,28 +74,31 @@ Link {
 }
 
 .cards{
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 2rem;
-  background-color: white;
-  width: 300px;
+  background-color: #F7A9A8;
+  width: 350px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 
-
 .cards-image {
- height: 350px;
- width: 90%;
+ height: 300px;
+ width: auto;
  border-radius: 2rem;
  border:none;
  margin: 1rem;
+
 }
 
 .cards-description-container, .cards-description-container * {
-  background-color: white;
-  color: black;
+  background-color: inherit;
+  color: #FAFAFA;
+  text-align: center;
 }
 
 .welcome_section{
