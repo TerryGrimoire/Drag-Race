@@ -10,7 +10,6 @@ function Queens() {
   const [season, setSeason] = useState('All');
   const [cardSelection, setCardSelection] = useState('');
 
-  console.log(cardSelection)
 const apiLink = season === 'All'? 'http://www.nokeynoshade.party/api/queens/all' : `http://www.nokeynoshade.party/api/seasons/${season}/queens` ;
 
 useEffect(() =>{
@@ -23,13 +22,13 @@ useEffect(() =>{
 
     return (
       <div className="main">
-        <h1>Queen section</h1>
+        <h1>✨ Queen section ✨</h1>
         <Search season={season} setSeason={setSeason} cardSelection={cardSelection} setCardSelection={setCardSelection} />
       <div className='cards-total'>
 
         {seasonQueens
         .filter(el => el.name.includes(cardSelection))
-        .map((queen)=> <Cards queen={queen} /> ) }
+        .map((queen)=> <Cards queen={queen} key={queen.id} /> ) }
 
       </div>
       </div>
