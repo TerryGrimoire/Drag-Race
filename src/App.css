@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+:root {
+  --main_color: #613F75 ;
+  --secondary_color : #F7A9A8 ;
+  --text_color: #FAFAFA;
+}
+
 * {
   text-align: center;
   color: white;
-  background-color: #613F75;
+  background-color: var(--main_color) ;
   margin: 0;
   box-sizing: border-box;
 }
