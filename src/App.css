@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+:root {
+  --main_color: #613F75 ;
+  --secondary_color : #F7A9A8 ;
+  --text_color: #FAFAFA;
+}
+
 * {
   text-align: center;
-  color: white;
-  background-color: #613F75;
+  color: var(--text_color);
+  background-color: var(--main_color) ;
   margin: 0;
   box-sizing: border-box;
 }
@@ -62,7 +69,7 @@ Link {
 
 .cards-title{
   border-radius: 0.5rem;
-  color: #FAFAFA ;
+  color: var(--text_color) ;
   background-color: inherit;
   width: 90%;
 }
@@ -76,7 +83,7 @@ Link {
 .cards{
   padding: 0.5rem;
   margin: 2rem;
-  background-color: #F7A9A8;
+  background-color: var(--secondary_color);
   width: 350px;
   height: 550px;
   display: flex;
@@ -97,12 +104,12 @@ Link {
 
 .cards-description-container, .cards-description-container * {
   background-color: inherit;
-  color: #FAFAFA;
+  color: var(--text_color);
   text-align: center;
 }
 
 .welcome_section{
-  background-color: #F7A9A8;
+  background-color: var(--secondary_color);
   margin: 2rem;
   padding: 2rem;
   display: flex;
