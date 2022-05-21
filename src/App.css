@@ -98,6 +98,10 @@ Link {
   color: black;
 }
 
+.welcome_main_section{
+  height: 90vh;
+}
+
 .welcome_section{
   background-color: #F7A9A8;
   margin: 2rem;
