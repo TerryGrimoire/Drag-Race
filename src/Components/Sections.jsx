@@ -7,7 +7,7 @@ function Sections({ el }) {
         <section className='welcome_section'>
         <img className='welcome_rupaul_img' src={el.image} alt={el.title} />
         <article>
-          <h2> {el.title} </h2>
+          <h3> {el.title} </h3>
          <p> {el.text} </p>
         </article>
         </section>

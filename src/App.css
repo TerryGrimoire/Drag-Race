@@ -9,12 +9,12 @@
 * {
   text-align: center;
   color: var(--text_color);
-  background-color: var(--main_color) ;
+  background-color: var(--secondary_color) ;
   margin: 0;
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Oleo Script Swash Caps', cursive;
   background-color: inherit;
 }
@@ -37,14 +37,12 @@ Link {
 .nav_container {
   display: flex;
   justify-content: space-between;
-  padding:1rem;
-  margin-bottom: 2rem;
+  padding: 1.2rem;
+  background-color: var(--main_color);
 }
-
-.nav_logo{
-  text-decoration: none;
+.nav_container *{
+  background-color: inherit;
 }
-
 .nav_ul {
   list-style: none;
   display: flex;
@@ -57,14 +55,11 @@ Link {
   padding: 0.25rem 1rem;
   text-decoration: none;
   font-size: 1.2rem;
-  transition: all 2s ease-in-out;
-
 }
 
 
 .nav_ul li:hover{
-  border-bottom: white solid 0.1rem;
-  transition: all 2s ease-in-out;
+  color: var(--secondary_color) ;
 }
 
 .cards-title{
@@ -107,14 +102,20 @@ Link {
   color: var(--text_color);
   text-align: center;
 }
+.welcome_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .welcome_main_section{
   height: 90vh;
+  background-image: url('./images/banner.jpg');
+  background-size: cover;
 }
 
 .welcome_section{
   background-color: var(--secondary_color);
-  margin: 2rem;
   padding: 2rem;
   display: flex;
   border-radius: 1rem;
@@ -123,14 +124,60 @@ Link {
 }
 
 .welcome_title{
-  padding: 2rem;
+  position: relative;
+  top: 40%;
+  right: 18%;
+  font-size: 2.5rem;
+  background-color: transparent;
+}
+
+.welcome_secondary_section{
+  margin: 2rem;
+  height: 90vh;
+}
+
+.welcome_title2 {
+  padding-top: 2rem;
 }
 
 .welcome_rupaul_img{
   margin: 0.5rem;
-  height: 400px;
+  height: 25rem;
   border-radius: 1rem;
 
+}
+
+.welcome_fleche{
+  background-color: transparent;
+  position: absolute;
+  bottom: 5%;
+  width: 5%;
+  opacity: 50%;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  transition: 0.75s ease-in-out all;
+
+}
+
+.welcome_fleche:hover{
+ opacity: 100%;
+ animation: none;
+ transform: scale(1.2);
+ transition: 0.75s ease-in-out all;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.85);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.85);
+  }
 }
 
 .search_main{
