@@ -2,6 +2,7 @@ import React from 'react';
 import fleche from '../images/fleche.png';
 import { HashLink } from 'react-router-hash-link';
 import Introduction from './Introduction';
+import MarieSoleil from './MarieSoleil';
 
 function Welcome() {
 
@@ -14,8 +15,13 @@ function Welcome() {
       <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' />
       </HashLink>
       </section>
-
+      <section>
       <Introduction />
+      <HashLink to='#mariesoleil' className='fleche_position' > <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' /> </HashLink>
+      </section>
+      <MarieSoleil />
+
+  
 
      
     </div>
