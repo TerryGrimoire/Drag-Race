@@ -1,7 +1,7 @@
 import React from 'react';
 import welcomeData from '../data/welcomeData';
 import Sections from './Sections';
-import fleche from '../images/fleche.png';
+
 
 
 function Introduction() {
@@ -15,7 +15,6 @@ function Introduction() {
       </p>
     </article>
  <div className='sections_container'> {welcomeData.map(data => <Sections el={data} key={data.id} /> )} </div> 
- <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' /> 
   </section>
   )
 }

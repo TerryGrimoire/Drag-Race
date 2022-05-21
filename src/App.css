@@ -158,8 +158,8 @@ Link {
 }
 
 .welcome_secondary_section{
-  margin: 2rem;
-  height: 90vh;
+  margin: 0 2rem;
+  height: 88vh;
 }
 
 
@@ -260,5 +260,27 @@ Link {
  align-items: center;
  justify-content: center;
  cursor: pointer;
+}
+
+.mariesoleil_main {
+  height: 80vh;
+}
+
+.mariesoleil_img {
+  height: 30rem;
+  border-radius: 50%;
+  margin: 0 2rem;
+}
+
+.mariesoleil_vd {
+  height: 45rem;
+  clip-path:ellipse(50% 33%);
+  margin: 0 2rem;
+}
+
+.container_media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
