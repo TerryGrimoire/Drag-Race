@@ -1,15 +1,23 @@
 import React from 'react';
-import Sections from './Sections';
-import welcomeData from '../data/welcomeData';
-
+import fleche from '../images/fleche.png';
+import { HashLink } from 'react-router-hash-link';
+import Introduction from './Introduction';
 
 function Welcome() {
 
   return (
-    <div>
+    <div className='welcome_main'>
 
-      <h1 className='welcome_title'> ✨ Welcome to the main page of RuPaul Drag Scene ✨</h1>
-      {welcomeData.map(data => <Sections el={data} key={data.id} /> )}
+      <section className="welcome_main_section">
+      <h1 className='welcome_title'> ✨ Welcome to the <span> main page </span> of RuPaul Drag Scene ✨</h1>
+      <HashLink to='#start' className='fleche_position'>
+      <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' />
+      </HashLink>
+      </section>
+
+      <Introduction />
+
+     
     </div>
   )
 }

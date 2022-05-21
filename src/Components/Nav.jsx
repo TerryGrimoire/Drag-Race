@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div>
       <section className='nav_container'>
-     <h1 className='nav_logo'> <Link to="/" > NoTeaNoShade </Link> </h1>
+     <h3 className='nav_logo'> <Link to="/" > NoTeaNoShade </Link> </h3>
         <ul className='nav_ul'>
             <Link to="/" > <li> Main Stage </li> </Link>
             <Link to="/Queens" > <li> Queens </li> </Link>
