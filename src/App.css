@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+:root {
+  --main_color: #613F75 ;
+  --secondary_color : #F7A9A8 ;
+  --text_color: #FAFAFA;
+}
+
 * {
   text-align: center;
-  color: white;
-  background-color: #613F75;
+  color: var(--text_color);
+  background-color: var(--main_color) ;
   margin: 0;
   box-sizing: border-box;
 }
@@ -13,9 +20,9 @@ h1, h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: inherit;
 }
 
@@ -62,8 +69,8 @@ Link {
 
 .cards-title{
   border-radius: 0.5rem;
-  color: Pink ;
-  background-color: white;
+  color: var(--text_color) ;
+  background-color: inherit;
   width: 90%;
 }
 
@@ -74,28 +81,31 @@ Link {
 }
 
 .cards{
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 2rem;
-  background-color: white;
-  width: 300px;
+  background-color: var(--secondary_color);
+  width: 350px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 
-
 .cards-image {
- height: 350px;
- width: 90%;
+ height: 300px;
+ width: auto;
  border-radius: 2rem;
  border:none;
  margin: 1rem;
+
 }
 
 .cards-description-container, .cards-description-container * {
-  background-color: white;
-  color: black;
+  background-color: inherit;
+  color: var(--text_color);
+  text-align: center;
 }
 
 .welcome_main_section{
@@ -103,7 +113,7 @@ Link {
 }
 
 .welcome_section{
-  background-color: #F7A9A8;
+  background-color: var(--secondary_color);
   margin: 2rem;
   padding: 2rem;
   display: flex;
