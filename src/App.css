@@ -5,6 +5,8 @@
   --main_color: #613F75 ;
   --secondary_color : #F7A9A8 ;
   --text_color: #FAFAFA;
+  --title_font_family: 'Oleo Script Swash Caps', cursive;
+  --text_font_family: 'Arvo', serif;
 }
 
 * {
@@ -20,7 +22,7 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: var(--title_font_family);
   background-color: inherit;
 }
 
@@ -40,7 +42,7 @@ p {
   font-size: 1rem;
   text-align: left;
   background-color: inherit;
-  font-family: 'Arvo', serif;
+  font-family: var(--text_font_family);
 }
 
 span {
@@ -72,6 +74,7 @@ Link {
   padding: 0.25rem 1rem;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: --;
 }
 
 
@@ -101,6 +104,9 @@ Link {
   align-items: center;
   overflow: hidden;
   position: relative;
+}
+
+.cards:hover{
   animation: pulse3 2s infinite;
 }
 
@@ -120,12 +126,13 @@ Link {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  opacity: 90%;
+  opacity: 80%;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: black;
+  border: var(--main_color) solid 0.5rem;
 }
 
 .show * {
@@ -277,12 +284,16 @@ Link {
   border-radius: 1.5rem;
   transition: 1s ease-in-out;
   margin: 1rem;
+  color: var(--main_color);
 }
 
 .search_input:focus{
   width: 40%;
   margin-bottom: 0.5rem;
   background-color: var(--main_color);
+  color: var(--secondary_color);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .about_section2{
   display: flex;
@@ -295,6 +306,9 @@ Link {
 
 .search_select:focus {
   background-color: var(--main_color);
+  color: var(--secondary_color);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .learn_more {
@@ -410,4 +424,21 @@ Link {
   }
 }
 
+.socialmedia_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main_color);
+  padding: 2rem;
+  height: 12rem;
+  width: 10rem;
+  border-radius: 1rem;
+}
+
+.socialmedia_img{
+  height: 5rem;
+  margin-bottom: 1rem;
+  background-color: inherit;
+}
 
