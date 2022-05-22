@@ -20,10 +20,7 @@ function Welcome() {
       <HashLink to='#mariesoleil' className='fleche_position' > <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' /> </HashLink>
       </section>
       <MarieSoleil />
-
-  
-
-     
+      <HashLink to='#top' className='fleche_position' > <img src={fleche} alt="fleche vers le haut" className='welcome_fleche_top' /> </HashLink>
     </div>
   )
 }
