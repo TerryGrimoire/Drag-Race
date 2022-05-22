@@ -133,7 +133,6 @@ Link {
 
 .sections_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -169,7 +168,7 @@ Link {
 
 
 .welcome_title2 {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 2rem;
 }
 
@@ -192,6 +191,15 @@ Link {
   margin-bottom: 1rem;
 }
 
+.welcome_fleche_top {
+  background-color: transparent;
+  width: 5%;
+  opacity: 50%;
+  cursor: pointer;
+  transition: 0.75s ease-in-out all;
+  animation: pulse2 2s infinite;
+  margin-bottom: 1rem;
+}
 .fleche_position {
   position: relative;
   bottom: -76%;
@@ -273,12 +281,14 @@ Link {
 }
 
 .mariesoleil_main {
-  height: 100vh;
-  margin: 0 2rem;
+  height: 85vh;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .mariesoleil_title2 {
-  padding: 2rem;
+  padding: 1rem 1rem 0;
 }
 
 .mariesoleil_container {
@@ -289,11 +299,30 @@ Link {
 }
 .mariesoleil_img_container {
   display: flex;
-  padding: 2rem;
+  padding: 0.5rem;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .mariesoleil_img {
   height: 35rem;
   margin: 0 2rem;
 }
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.85) rotate(180deg);
+  }
+
+  70% {
+    transform: scale(1.2) rotate(180deg);
+
+  }
+
+  100% {
+    transform: scale(0.85) rotate(180deg);
+
+  }
+}
+
 
