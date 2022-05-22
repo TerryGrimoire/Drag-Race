@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import Cards from '../Components/Cards';
 import Search from '../Components/Search';
+import lipstick from '../images/lipstick.png'
 
 
 function Queens() {
@@ -22,7 +23,9 @@ useEffect(() =>{
 
     return (
       <div className="main">
-        <h1>✨ Queen section ✨</h1>
+        <div className="queens_header">
+        <img src={lipstick} alt="lipstick" className='lipstick' /> <h1> Queen section </h1> <img src={lipstick} alt="lipstick" className='lipstick' />
+          </div>
         <Search season={season} setSeason={setSeason} cardSelection={cardSelection} setCardSelection={setCardSelection} />
       <div className='cards-total'>
 

@@ -255,6 +255,7 @@ Link {
 .search_input:focus{
   width: 40%;
   margin-bottom: 0.5rem;
+  background-color: var(--main_color);
 }
 .about_section2{
   display: flex;
@@ -263,6 +264,10 @@ Link {
 }
 .about_img_mariesoleil{
   width: 40%;
+}
+
+.search_select:focus {
+  background-color: var(--main_color);
 }
 
 .learn_more {
@@ -321,6 +326,44 @@ Link {
 
   100% {
     transform: scale(0.85) rotate(180deg);
+
+  }
+}
+.queens_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.lipstick {
+  height: 2rem;
+  margin: 0 2rem;
+}
+
+.lipstick:hover {
+ animation : titleMove 1s infinite;
+}
+
+@keyframes titleMove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform:rotate(45deg);
+
+  }
+
+  60% {
+    transform:rotate(90deg);
+  }
+
+  80% {
+    transform:rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
 
   }
 }
