@@ -11,7 +11,7 @@ function Queens() {
   const [season, setSeason] = useState('All');
   const [cardSelection, setCardSelection] = useState('');
 
-const apiLink = season === 'All'? 'http://www.nokeynoshade.party/api/queens/all' : `http://www.nokeynoshade.party/api/seasons/${season}/queens` ;
+const apiLink = season === 'All'? 'https://www.nokeynoshade.party/api/queens/all' : `https://www.nokeynoshade.party/api/seasons/${season}/queens` ;
 
 useEffect(() =>{
   Axios
