@@ -2,9 +2,9 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Queens from './Pages/Queens';
 import Home from './Pages/Home';
-import SashayAway from './Pages/SashayAway';
-import About from './Pages/About';
+import Contact from './Pages/Contact';
 import Nav from './Components/Nav';
+import Vocabulary from './Pages/Vocabulary';
 
 
 
@@ -16,8 +16,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/Queens' element={<Queens />} />
-      <Route path='/SashayAway' element={<SashayAway />} />
-      <Route path='/About' element={<About />} />
+      <Route path='/Vocabulary' element={<Vocabulary />} />
+      <Route path='/Contact' element={<Contact />} />
     </Routes>
   </Router>
 

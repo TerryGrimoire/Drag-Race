@@ -439,7 +439,6 @@ Link {
   transition: all ease-in-out 0.5s;
 }
 
-
 .socialmedia_img:hover {
   transform: scale(1.2);
 }
@@ -456,6 +455,7 @@ Link {
 h4 {
   width: 100%;
   padding: 1.5rem;
+  font-size: large;
   color: var(--text_color);
   font-family: var(--text_font_family);
 }
