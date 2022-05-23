@@ -1,5 +1,6 @@
 import React from 'react';
-
+import library from '../data/library';
+import Explanation from '../Components/Explanation';
 import glasses from '../images/sunglasses.png';
 
 function Vocabulary() {
@@ -12,6 +13,7 @@ function Vocabulary() {
       <section>
             <h4> Learn more about the drag Vocabulary </h4>
             <div className="library_container">
+              {library.map(el => <Explanation data={el} key={el.id} /> )}
             </div>
         </section>
     </div>
