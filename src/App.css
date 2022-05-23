@@ -297,8 +297,10 @@ Link {
 }
 .about_section2{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 4rem;
+  align-items: center;
+  padding: 0.5rem;
 }
 .about_img_mariesoleil{
   width: 40%;
@@ -429,16 +431,40 @@ Link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--main_color);
-  padding: 2rem;
-  height: 12rem;
-  width: 10rem;
-  border-radius: 1rem;
 }
 
 .socialmedia_img{
-  height: 5rem;
-  margin-bottom: 1rem;
-  background-color: inherit;
+  height: 4rem;
+  margin: 0 3rem;
+  transition: all ease-in-out 0.5s;
 }
+
+
+.socialmedia_img:hover {
+  transform: scale(1.2);
+}
+
+.socialmedias_container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  padding: 0 2rem;
+}
+
+h4 {
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--text_color);
+  font-family: var(--text_font_family);
+}
+
+.contact_rupaul_img {
+  width: 32%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--main_color);
+}
+
 

@@ -6,26 +6,26 @@ import instagram from '../images/instagram.png';
 const socialMedia = [
     {
         id: 1,
-        reseau: 'Linkedin',
-        img: linkedin,
+        title: 'My Linkedin profile',
+        image: linkedin,
         src: 'https://www.linkedin.com/in/terry-grimoire/',
     },
     {
         id: 2,
-        reseau: 'GitHub',
-        img:github ,
+        title: 'My GitHub profile',
+        image:github ,
         src: 'https://github.com/TerryGrimoire',
     },
     {
         id: 3,
-        reseau: 'Mon Portefolio',
-        img:portefolio ,
+        title: 'My Portefolio',
+        image:portefolio ,
         src: 'https://github.com/TerryGrimoire',
     },
     {
         id: 4,
-        reseau: 'Instagram',
-        img: instagram ,
+        title: 'My Instagram profile',
+        image: instagram ,
         src: 'https://www.instagram.com/mariesoleilreborn/?hl=fr',
     }
 
