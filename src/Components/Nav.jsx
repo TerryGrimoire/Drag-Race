@@ -9,8 +9,8 @@ function Nav() {
         <ul className='nav_ul'>
             <Link to="/" > <li> Main Stage </li> </Link>
             <Link to="/Queens" > <li> Queens </li> </Link>
-            <Link to="/About" > <li> Contact </li> </Link>
-            <Link to="/SashayAway" > <li> Sashay Away </li> </Link>
+            <Link to="/Vocabulary" > <li> Library </li> </Link>
+            <Link to="/Contact" > <li> Contact </li> </Link>
         </ul>
       </section>
 
