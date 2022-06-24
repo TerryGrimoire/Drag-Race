@@ -7,21 +7,17 @@ import MarieSoleil from './MarieSoleil';
 function Welcome() {
 
   return (
-    <div className='welcome_main'>
-
+    <section>
       <section className="welcome_main_section">
       <h1 className='welcome_title'> ✨ Welcome to the <span> main page </span> of RuPaul Drag Scene ✨</h1>
       <HashLink to='#start' className='fleche_position'>
       <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' />
       </HashLink>
       </section>
-      <section>
       <Introduction />
-      <HashLink to='#mariesoleil' className='fleche_position' > <img src={fleche} alt="fleche vers le bas" className='welcome_fleche' /> </HashLink>
-      </section>
       <MarieSoleil />
       <HashLink to='#top' className='fleche_position' > <img src={fleche} alt="fleche vers le haut" className='welcome_fleche_top' /> </HashLink>
-    </div>
+    </section>
   )
 }
 

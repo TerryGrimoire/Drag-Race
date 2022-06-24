@@ -5,10 +5,10 @@ import marieso from '../data/marieso.js';
 function MarieSoleil() {
 
   return (
-    <div id='mariesoleil' className='mariesoleil_main'>
+    <section id='mariesoleil' className='mariesoleil_main'>
         <h2 className='mariesoleil_title2'>Marie Soleil was <span> born </span></h2>
 
-        <section className='mariesoleil_container'>
+        <div className='mariesoleil_container'>
             <article className="welcome_introduction">
             <h3> Becoming Myself</h3>
             <p className="welcome_intro_p">
@@ -19,8 +19,8 @@ function MarieSoleil() {
             {marieso.map( data =>  <Sections el={data} /> ) }
             </div>
 
-        </section>
-    </div>
+        </div>
+    </section>
   )
 }
 
