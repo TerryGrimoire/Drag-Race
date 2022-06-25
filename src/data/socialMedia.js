@@ -1,18 +1,18 @@
-import github from '../images/github.png';
-import linkedin from '../images/linkedin.png';
+import github from '../images/github.svg';
+import linkedin from '../images/linkedin.svg';
 import portefolio from '../images/portfolio.png';
-import instagram from '../images/instagram.png';
+import instagram from '../images/instagram.svg';
 
 const socialMedia = [
     {
         id: 1,
-        title: 'My Linkedin profile',
+        title: 'Linkedin profile',
         image: linkedin,
         src: 'https://www.linkedin.com/in/terry-grimoire/',
     },
     {
         id: 2,
-        title: 'My GitHub profile',
+        title: 'GitHub profile',
         image:github ,
         src: 'https://github.com/TerryGrimoire',
     },
@@ -24,7 +24,7 @@ const socialMedia = [
     },
     {
         id: 4,
-        title: 'My Instagram profile',
+        title: 'Instagram profile',
         image: instagram ,
         src: 'https://www.instagram.com/mariesoleilreborn/?hl=fr',
     }

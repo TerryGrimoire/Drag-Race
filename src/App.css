@@ -34,6 +34,7 @@ select {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -524,8 +525,8 @@ background-image: inherit;
 }
 
 .socialmedia_img{
-  height: 4rem;
-  margin: 0 3rem;
+  height: 3rem;
+  margin: 0.5rem 3rem 0.75rem;
   transition: all ease-in-out 0.5s;
 }
 
@@ -533,13 +534,20 @@ background-image: inherit;
   transform: scale(1.2);
 }
 
-.socialmedias_container {
+.about_section2 .socialmedias_container {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items:center;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  background-image: none;
+  box-shadow: var(--box-shadow);
+
+}
+
+.socialmedias_container div, .socialmedias_container p {
+  background-image: none;
+  font-size: 0.75rem;
 }
 
 h4 {
@@ -553,8 +561,12 @@ h4 {
   width: 32%;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  border-radius: 0.35rem;
+  box-shadow: var(--box-shadow);
 }
-
+.contact_rupaul_img img {
+  border-radius: 0.35rem;
+}
 .library_container{
   display: flex;
   flex-direction: column;
@@ -596,7 +608,6 @@ h4 {
 }
 
 .contact_main {
-margin-bottom: 3rem;
 animation: appear 3s ease-in-out;
 }
 .contact_main * {
