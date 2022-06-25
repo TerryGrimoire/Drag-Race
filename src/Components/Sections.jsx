@@ -12,7 +12,7 @@ function Sections({ el }) {
         <h3 className='sections_title3'> {el.title} </h3>
         <p> {el.slogan ? el.slogan : el.text} </p>
         </div>
-        {(mouseOver && el.slogan) ? <div className='learn_more'> <p> {el.text} </p> </div> : ''}
+        {(mouseOver && el.slogan) ? <div className='learn_more'> <h3> {el.title}</h3> <p> {el.text} </p> </div> : ''}
         </div>
   )
 

@@ -399,16 +399,19 @@ background-image: inherit;
   top: 0;
   background-color: var(--main_color);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   white-space: pre-line;
   overflow-wrap: break-word;
+  padding: 0 5rem;
 }
 
 .learn_more p {
   text-align: center;
   white-space: pre-line;
+  padding-top: 2rem;
 }
 
 .mariesoleil_main {
@@ -522,16 +525,19 @@ background-image: inherit;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: var(--box-shadow);
+  margin: 0rem 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.35rem;
 }
+
+.socialmedia_container:hover {
+  transform: scale(1.1);}
 
 .socialmedia_img{
   height: 3rem;
   margin: 0.5rem 3rem 0.75rem;
   transition: all ease-in-out 0.5s;
-}
-
-.socialmedia_img:hover {
-  transform: scale(1.2);
 }
 
 .about_section2 .socialmedias_container {
@@ -541,14 +547,13 @@ background-image: inherit;
   align-items:center;
   padding: 1rem 2rem;
   background-image: none;
-  box-shadow: var(--box-shadow);
-
 }
 
 .socialmedias_container div, .socialmedias_container p {
   background-image: none;
   font-size: 0.75rem;
 }
+
 
 h4 {
   padding: 1.5rem;
