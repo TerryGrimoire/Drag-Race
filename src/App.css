@@ -632,3 +632,105 @@ background-image: inherit;
 .go_up:hover {
   opacity: 100%;
 }
+
+@media screen and ( max-width : 768px) {
+
+  section, div {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .nav_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .welcome_main_section {
+      height: 40rem;
+      background-size:60rem;
+      background-position:65% 0%;
+      background-repeat: no-repeat;
+    }
+
+    .welcome_main_section h1 {
+      font-size: 1.2rem;
+      width: 60%;
+      position: absolute;
+      top: 40%;
+      left: 2rem;
+    }
+
+    .welcome_fleche {
+      display: none;
+    }
+
+    .mouse_effect {
+      display: none;
+    }
+
+    .welcome_secondary_section {
+      padding: 1rem;
+    }
+
+    .mariesoleil_main {
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+    .mariesoleil_container {
+      padding: 0;
+      background-color: transparent;
+      background-image: inherit;
+    }
+    .mariesoleil_container img {
+      width: 25rem;
+      font-size: smaller;
+    }
+
+    .learn_more {
+      padding: 0 2.5rem;
+    }
+
+    .learn_more p {
+      font-size: 0.75rem;
+    }
+
+    .search_main {
+      position: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    .cards-total {
+      margin: 0 1rem;
+      justify-content: center;
+    }
+
+    .cards {
+      margin: 2rem 0;
+    }
+
+    .go_up {
+      display: none;
+    }
+    .library_container {
+      padding: 0;
+    }
+    .explanation_container {
+      margin: 1rem 0;
+      padding: 0.5rem;
+    }
+
+    .contact_rupaul_img {
+      width: 100%;
+    }
+
+    .socialmedias_container > * {
+      margin: 1rem 0;
+    }
+
+  }
