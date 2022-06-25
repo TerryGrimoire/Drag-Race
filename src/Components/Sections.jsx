@@ -8,8 +8,11 @@ function Sections({ el }) {
   return (
         <div className='welcome_sections' onMouseOver={()=> setMouseOver(true)} onMouseLeave={()=>setMouseOver(false)} >
         <img className='welcome_rupaul_img' src={el.image} alt={el.title} />
+        <div className='no_background_image flex_column'>
         <h3 className='sections_title3'> {el.title} </h3>
-        {mouseOver? <div className='learn_more'> <p> Learn More about {el.title} </p> </div> : '' }
+        <p> {el.slogan ? el.slogan : el.text} </p>
+        </div>
+        {(mouseOver && el.slogan) ? <div className='learn_more'> <p> {el.text} </p> </div> : ''}
         </div>
   )
 

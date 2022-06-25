@@ -1,14 +1,22 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { Helmet } from 'react-helmet';
 import library from '../data/library';
 import Explanation from '../Components/Explanation';
-import glasses from '../images/sunglasses.png';
+import arrow from '../images/fleche.png';
 
 function Vocabulary() {
 
   return (
-    <div>
+    <div className="vocabulary-container" >
+      <Helmet>
+        <title>Drag | Library
+        </title>
+      </Helmet>
+
+      <HashLink to="#top"><img src={arrow} alt="arrow" className='go_up'/></HashLink>
       <div className="queens_header">
-      <img src={glasses} alt="travel bag" className='lipstick' /> <h1> Discover the drag <span> Library </span>  </h1> <img className='lipstick' src={glasses} alt="travel bag" />
+<h1> Discover the drag <span> Library </span>  </h1>
       </div>
       <section>
             <h4> Learn more about the drag Vocabulary </h4>

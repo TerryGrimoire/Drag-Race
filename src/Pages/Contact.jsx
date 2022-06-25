@@ -1,12 +1,16 @@
-import React from 'react'
-import contact from '../images/contact-us.png';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import socialMedia from '../data/socialMedia';
 import SocialMedias from '../Components/SocialMedias';
 
 function Contact() {
   return (
-    <div className='about_main'>
-        <div className="queens_header"> <img src={contact} alt="contact" className='lipstick'/> <h1> Contact me </h1> <img src={contact} alt="contact" className='lipstick'/></div>
+    <div className='contact_main'>
+      <Helmet>
+        <title>Drag | Contact
+        </title>
+      </Helmet>
+        <h1> Contact me </h1>
         <section className='about_section2'>
 
         <h4> Now, if you are as much as a stalker as I am, it is time to investigate and find me on social media </h4>

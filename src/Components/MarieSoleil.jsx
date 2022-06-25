@@ -15,7 +15,7 @@ function MarieSoleil() {
                 Thanks to RuPaul Drag Race, I was able to become more myself, I was no longer afraid of embracing my inner feminity. Although, I consider myself as male with male pronouns, I was freed and society gender norms. I no longer consider cloathes to have gender and I see no problem in wearing wigs, make-up or heels. As the drag mother of an entire generation, RuPaul was able to create an entire comunity and free so many people from toxic masculinity, patriarchy and self hatred.  
             </p>
             </article>
-            <div className='mariesoleil_img_container'>
+            <div className='sections_container'>
             {marieso.map( data =>  <Sections el={data} /> ) }
             </div>
 

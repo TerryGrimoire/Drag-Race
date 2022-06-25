@@ -20,7 +20,7 @@ const socialMedia = [
         id: 3,
         title: 'My Portefolio',
         image:portefolio ,
-        src: 'https://github.com/TerryGrimoire',
+        src: 'https://grimoire-terry.netlify.app/',
     },
     {
         id: 4,

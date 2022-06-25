@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Axios from 'axios';
 import Cards from '../Components/Cards';
 import Search from '../Components/Search';
-import lipstick from '../images/lipstick.png'
-
 
 function Queens() {
 
@@ -23,14 +22,18 @@ useEffect(() =>{
 
     return (
       <div className="main">
+        <Helmet>
+        <title>Drag | Queens
+        </title>
+      </Helmet>
         <div className="queens_header">
-        <img src={lipstick} alt="lipstick" className='lipstick' /> <h1> Queen section </h1> <img src={lipstick} alt="lipstick" className='lipstick' />
+        <h1> Queens of RuPaul Drag Race</h1>
           </div>
         <Search season={season} setSeason={setSeason} cardSelection={cardSelection} setCardSelection={setCardSelection} />
       <div className='cards-total'>
 
         {seasonQueens
-        .filter(el => el.name.includes(cardSelection))
+        .filter(el => el.name.toLowerCase().includes(cardSelection.toLocaleLowerCase()))
         .map((queen)=> <Cards queen={queen} key={queen.id} /> ) }
 
       </div>
